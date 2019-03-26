@@ -1,0 +1,69 @@
+* { box-sizing: border-box }
+.table-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header-row {
+  display: flex;
+  background-color: #666;
+  color: #fff;
+}
+
+.table-header-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #fff;
+  padding: 5px;
+  font-weight: bold;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #eee;
+}
+
+.table-row:nth-child(even) {
+  background-color: #fff;
+}
+
+.table-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ddd;
+  padding: 5px;
+  min-width: 80px;
+}
+
+.table-header-column:last-of-type {
+  border-right: 0;
+}
+
+.table-row:last-of-type {
+  border-bottom: 0;
+}
+
+.table-row:last-child {
+  border-right: 0;
+}
+
+.sort-icon-asc polygon {
+  fill: orange;
+}
+.sort-icon-desc polygon {
+  fill: skyblue;
+}
+.sort-icon-none polygon {
+  fill: #ccc;
+}
